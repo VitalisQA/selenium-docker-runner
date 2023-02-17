@@ -27,4 +27,4 @@ services:
       - HUB_HOST=hub
       - MODULE=search-module.xml
     volumes: 
-      - ./search-result1:/usr/share/udemy/test-output
+      - ./search-result:/usr/share/udemy/test-output
