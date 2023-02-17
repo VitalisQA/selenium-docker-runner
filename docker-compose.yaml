@@ -2,9 +2,7 @@ version: "3"
 services:
   hub: 
     image: selenium/hub:3.14
-    ports: 
-      - "4444:4444"
-  chrome: 
+  chrome:
     image: selenium/node-chrome:3.14
     depends_on:
       - hub
@@ -27,4 +25,4 @@ services:
       - HUB_HOST=hub
       - MODULE=search-module.xml
     volumes: 
-      - ./search-result:/usr/share/udemy/test-output
+      - ./output/search-result:/usr/share/udemy/test-output
